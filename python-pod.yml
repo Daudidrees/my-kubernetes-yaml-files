@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    run: blue
+spec:
+  containers:
+  - image: python:latest
+    name: blue
+    ports:
+    - containerPort: 80
