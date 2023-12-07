@@ -6,7 +6,7 @@ metadata:
     run: blue
 spec:
   containers:
-  - image: python:latest
+  - image: nginx
     name: blue
     ports:
     - containerPort: 80
