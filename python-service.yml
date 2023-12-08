@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-service
+  name: blue-svc
 spec:
   selector:
-    app: my-python-pod  # Update with your pod's labels
+    pod: blue
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80  # Update with the port your application is listening on in the pod
+    - protocol: TCP
+      port: 80   # NodePort service port
+      targetPort: 80   # Port on the pod
   type: NodePort
