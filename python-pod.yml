@@ -3,10 +3,11 @@ kind: Pod
 metadata:
   name: blue
   labels:
-    app: blue
+    run: blue
 spec:
   containers:
-  - name: blue
-    image: nginx
+  - image: nginx
+    name: blue
     ports:
     - containerPort: 80
+
